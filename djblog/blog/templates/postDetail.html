@@ -12,5 +12,8 @@
 {{ post.body }}
 <br><br>
 <a href="{% url 'home' %}" class="btn btn-outline-secondary">Back</a>
+<a href="{% url 'post-edit' post.pk %}" class="btn btn-outline-secondary">Edit</a>
+<a href="{% url 'post-delete' post.pk %}" class="btn btn-outline-danger">Delete</a>
+
 
 {% endblock %}
